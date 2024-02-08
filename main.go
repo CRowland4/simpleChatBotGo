@@ -18,7 +18,7 @@ func guessAge() {
 	var rem3, rem5, rem7, age int
 
 	fmt.Println("Let me guess your age.")
-	fmt.Println("Enter remainders of dividing your age by 3, 5 and 7.")
+	fmt.Println("Enter remainders of dividing your age by 3, 5 and 7, pressing Enter after typing each result.")
 	fmt.Scan(&rem3, &rem5, &rem7)
 
 	age = (rem3*70 + rem5*21 + rem7*15) % 105
@@ -28,10 +28,10 @@ func guessAge() {
 func count() {
 	var n int
 
-	fmt.Println("Now I will prove to you that I can count to any number you want.")
+	fmt.Println("Now I will prove to you that I can count to any number you want. Enter any number.")
 	fmt.Scan(&n)
 	for i := 0; i <= n; i++ {
-		fmt.Printf("%d !\n", i)
+		fmt.Printf("%d\n", i)
 	}
 }
 
